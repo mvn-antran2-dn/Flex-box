@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Homework Js</title>
+    <script src="style.js"></script>
+</head>
+
+<body>
+    <h3 style="color: green;">What are the differences between a variable that is: `null`, `undefined`?</h3>
+    <p>
+        <span style="color: red;"> NULL</span> : null có nghĩa là giá trị rỗng hoặc giá trị không tồn tại. Nó là một đối tượng.
+        <br>Nó có thể được sử dụng để gán cho một biến như là một đại diện không có giá trị.
+        <br><span style="color: red;"> UNDERFINE</span>: có nghĩa là không xác định, có nghĩa là một biến đã được khai báo nhưng
+        <br>chưa được gán cho bất kỳ giá trị nào ,theo mặc định biến được gán một giá trị không xác định gọi là Underfine.
+        <br> typeof undefined -> undefined<br> typeof null -> object.
+    </p>
+    <h3 style="color: green;">What is `use strict`? what are the advantages and disadvantages to using it?</h3>
+    <P>
+        <span style=" color: red; "> "Use strict "</span> là từ khóa để bật chế độ Strict Mode, tạm dịch là chế độ nghiêm ngặt của JavaScript,
+        <br> bắt đầu xuất hiện từ phiên bản ECMAScript 5.
+        <br> Khi khai báo <span style="color: red; "> Use strict</span> thì tất cả các dòng code ở phía dưới dòng khai báo <span style="color: red; "> Use strict</span>
+        <br> sẽ được JavaScript quản lý nghiêm ngặt hơn về mặt cú pháp.
+        <br> Điều này được yêu cầu cực kỳ khắt khe ở các dự án phức tạp để tránh các lỗ hổng tiềm tàng.
+        <br>Ví dụ: Với <span style="color: red; "> Use strict</span>, bạn không thể sử dụng các biến chưa được khai báo.
+        <br> Từ khóa <span style="color: red; "> Use strict</span> có thể đươc sử dụng ở hai vị trí đó là:
+        <br> Đặt ở đầu file hay đầu code JavaScript có tác dụng cho toàn bộ code JavaScript trong file đó
+        <br> Đặt ở đầu một hàm có tác dụng cho code trong hàm đó mà thôi.
+        <br> Lợi Thế:
+        <ul>
+            <li>Ngăn chặn sử dụng, và báo lỗi khi người lập trình thực hiện những xử lý được coi là không an toàn, những xử lý mà có thể là ngoài ý muốn.</li>
+            <li>Vô hiệu hoá các tính năng có thể gây nhầm lẫn, hoặc không nên được sử dụng.</li>
+            <li>Ngăn chặn sử dụng một số từ mà có thể sẽ được sử dụng làm keywork trong tương lai.</li>
+        </ul>
+        Bất lợi:
+        <ul>
+            <li>Mất đi tính đơn giản, mềm dẻo của ECMAScript thay vào đó là những qui tắc cứng nhắc</li>
+            <li>Khó tiếp cận với những người mới làm quen</li>
+        </ul>
+    </P>
+    <h3 style="color: green; ">What are the differences between `==` and `===`? Write an example for each case (if any)?</h3>
+    <p>
+        <span style="color: red;"> Toán tử "=="</span>: so sánh trừu tượng (abstract equality), tức là nó thực hiện các chuyển đổi loại cần thiết trước khi so sánh đẳng thức.
+        <br> Nghĩa là chỉ cần so sánh giá trị của 2 phần tử .Cú pháp so sánh: a == b.
+        <br> <span style="color: blue; ">console.log("12 " == 12) ==> true</span>
+        <br><span style="color: red;"> Toán tử "==="</span>: so sánh cân bằng nghiêm ngặt (strict equality), tức là nó sẽ không thực hiện chuyển đổi loại.
+        <br>Nghĩa là nó so sánh giá trị & kiểu dữ liệu của 2 phần tử.
+        <br> <span style="color: blue; ">console.log("12 " === 12) ==> false</span>
+    </p>
+    </p>
+    <p>
+        <h3 style="color: green;">Give a list of `Falsy` values in Javascript.</h3>
+        <p>=> " ", 0, null, undefined, NaN, false</p>
+    </p>
+</body>
+
+</html>
